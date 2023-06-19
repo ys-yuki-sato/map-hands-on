@@ -8,6 +8,9 @@ import HazardMapLayer from './HazardMapLayer'
 import EvacuationSiteLayer from './EvacuationSiteLayer'
 import DefaultMarker from './DefaultMarker'
 import BoundsComponent from './BoundsCompenent'
+import CircleLeaflet from './CircleLeaflet'
+import PolylineLeaflet from './PolylineLeaflet'
+import PolygonLeaflet from './PolygonLeaflet'
 
 // 地図部分のコンポーネント
 function Map(props) {
@@ -34,6 +37,9 @@ function Map(props) {
     <MapContainer className = {className} center = {position} zoom = {zoom} scrollWheelZoom = {false} >
       <BoundsComponent />
       <DefaultMarker position = {position} />
+      <CircleLeaflet />
+      <PolylineLeaflet />
+      <PolygonLeaflet />
       <TileLayer
         attribution = {attribution}
         url = {url}
