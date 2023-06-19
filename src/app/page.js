@@ -23,7 +23,10 @@ export default function Home() {
         <Link href={'/tooManyPin'}>地図にもっと多くのピンを立てる</Link>
       </div>
       <div>
-        <Link href={'/image'}>地図上に画像を表示する（Leaflet vs MapLibre GL）</Link>
+        <Link href={'/image-leaflet'}>地図上に画像を表示する（Leaflet）</Link>
+      </div>
+      <div>
+        <Link href={'/image-maplibre'}>地図上に画像を表示する（MapLibre GL）</Link>
       </div>
     </>
   );
