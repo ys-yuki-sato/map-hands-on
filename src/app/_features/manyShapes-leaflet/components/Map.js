@@ -65,7 +65,7 @@ const Map = async () => {
             url="https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/{z}/{x}/{y}.jpg"
           />
         </LayersControl.BaseLayer>
-        <LayersControl.Overlay name="人口集中地区">
+        <LayersControl.Overlay checked name="人口集中地区">
           <GeoJSON
             data={population}
             style={(feature) => 
@@ -83,7 +83,7 @@ const Map = async () => {
           >
           </GeoJSON>
         </LayersControl.Overlay>
-        <LayersControl.Overlay name="鉄道事業者">
+        <LayersControl.Overlay checked name="鉄道事業者">
           <GeoJSON
             data={railRoad}
             style={(feature) => 

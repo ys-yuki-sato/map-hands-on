@@ -27,7 +27,7 @@ export default function Home() {
       </div>
 
       <div>
-        <Link href={'/shapes-maplibre'}>地図上に図形を表示する（MapLibre GL）</Link>
+        <Link href={'/manyShapes-maplibre'}>地図上に図形を表示する（MapLibre GL）</Link>
       </div>
       <div>
         <Link href={'/tooManyPin'}>地図にもっと多くのピンを立てる</Link>
