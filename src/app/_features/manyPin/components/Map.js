@@ -39,7 +39,9 @@ const Map = async () => {
               ]}
               key={index}
             >
-              <Popup>{feature.properties.P29_004} <br/> {feature.properties.P29_005}</Popup>
+              <Popup>
+                {feature.properties.P29_004} <br /> {feature.properties.P29_005}
+              </Popup>
             </Marker>
           );
         })}
