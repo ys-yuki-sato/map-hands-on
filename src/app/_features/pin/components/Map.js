@@ -9,7 +9,7 @@ const ICON = icon({
 
 const Map = () => {
   // 経緯度（10進数）-> 田町駅
-  const position = [35.6441418, 139.7487384];
+  const position = [35.645736, 139.74757499999998];
   // 初期マップズームレベル
   const zoom = 13;
   return (
