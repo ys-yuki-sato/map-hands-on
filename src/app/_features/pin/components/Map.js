@@ -4,7 +4,6 @@ import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 const ICON = icon({
   iconUrl: "/marker-icon.png",
-  // iconUrl: '/ia4.jpg'
 });
 
 const Map = () => {
