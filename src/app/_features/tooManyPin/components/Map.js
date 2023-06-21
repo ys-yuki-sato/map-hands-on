@@ -13,10 +13,6 @@ const Map = async () => {
     return res.json();
   });
 
-  // const multiData = await fetch("/stub/P29-21.geojson").then((res) => {
-  //   return res.json();
-  // });
-
   // 経緯度（10進数）-> 群馬医療福祉大学附属鈴蘭幼稚園
   const position = [36.382472, 139.047735];
   // 初期マップズームレベル
