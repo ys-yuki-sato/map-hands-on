@@ -19,9 +19,9 @@ function Map(props) {
   })
   Leaflet.Marker.prototype.options.icon = DefaultIcon
 
-  // 緯度経度は愛知県庁のもの
-  const [lat, ] = useState(35.18028)
-  const [lng, ] = useState(136.90667)
+  // 緯度経度は東京都庁のもの
+  const [lat, ] = useState(35.689481)
+  const [lng, ] = useState(139.691686)
   const [zoom, ] = useState(13)
   const [position, ] = useState({
     lat: lat,
