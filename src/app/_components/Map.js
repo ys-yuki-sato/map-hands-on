@@ -3,18 +3,18 @@ import { MapContainer, TileLayer } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css'
 import { useState } from "react"
 import Leaflet from "leaflet"
-import icon from "leaflet/dist/images/marker-icon.png"
 import HazardMapLayer from './HazardMapLayer'
 import EvacuationSiteLayer from './EvacuationSiteLayer'
 import DefaultMarker from './DefaultMarker'
 import BoundsComponent from './BoundsCompenent'
 import MinDistLine from './MinDistLine'
 
+
 // 地図部分のコンポーネント
 function Map(props) {
   // marker setting
   let DefaultIcon = Leaflet.icon({
-    iconUrl: icon,
+    iconUrl: "/marker-icon.png",
     iconAnchor: [12, 41], // アイコンのとがった位置をクリックした場所に合わせるためのオフセット
     popupAnchor: [0, -32], // ポップアップの位置も合わせて調整
   })

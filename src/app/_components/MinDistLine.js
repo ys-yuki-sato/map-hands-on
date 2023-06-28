@@ -4,11 +4,8 @@ import { useState } from 'react'
 import L from "leaflet"
 import distance from '@turf/distance'
 
-
 // 現在地と最寄りの地物との間にラインを引くコンポーネント
 function MinDistLine() {
-
-  L.Icon.Default.imagePath = 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/'
 
   const [position, setPosition] = useState(null)
   let nearestFeature = null;
@@ -36,7 +33,7 @@ function MinDistLine() {
       }
     }
     // 最寄りの地物を返却
-    return minDistFeature.feature.geometry.coordinates;;
+    return minDistFeature.feature.geometry.coordinates;
   }
 
   // 地図クリック時のイベント
@@ -47,10 +44,11 @@ function MinDistLine() {
     locationfound(e) {
       // 現在地に飛ばす用  
       setPosition(e.latlng)
-      map.flyTo(e.latlng, 9)
-      const radius = e.accuracy;
-      const circle = L.circle(e.latlng, radius);
-      circle.addTo(map);
+      map.flyTo(e.latlng, 15)
+      // 円を表示する用
+      // const radius = e.accuracy;
+      // const circle = L.circle(e.latlng, radius);
+      // circle.addTo(map);
     }
   });
 
