@@ -5,7 +5,10 @@ import ReactDOMServer from 'react-dom/server'
 import GeoJsonLayersControlOverlay from "./GeoJsonLayersControlOverlay"
 
 // 指定緊急避難所の表示制御を行う
-function EvacuationSiteLayer() {
+async function EvacuationSiteLayer() {
+  const mergeFromCity = await fetch("/stub/mergeFromCity.geojson").then((res) => {
+    return res.json();
+  });
   return (
     <LayersControl position="topright" collapsed={false}>
       <GeoJsonLayersControlOverlay 
