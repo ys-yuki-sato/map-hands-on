@@ -5,9 +5,10 @@ import Leaflet from "leaflet"
 // 地図の中心に表示されるマーカーのコンポーネント
 function DefaultMarker(props) {
   let DefaultIcon = Leaflet.icon({
-    iconUrl: "/marker-icon.png",
-    iconAnchor: [12, 41], // アイコンのとがった位置をクリックした場所に合わせるためのオフセット
-    popupAnchor: [0, -32], // ポップアップの位置も合わせて調整
+    iconUrl: "/marker-icon.png" ,
+    iconAnchor: [6, 19], // アイコンのとがった位置をクリックした場所に合わせるためのオフセット
+    popupAnchor: [2, -16], // ポップアップの位置も合わせて調整
+    iconSize: [15, 25]
   })
   Leaflet.Marker.prototype.options.icon = DefaultIcon
 
