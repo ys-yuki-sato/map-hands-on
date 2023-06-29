@@ -7,6 +7,7 @@ import HazardMapLayer from './HazardMapLayer'
 import EvacuationSiteLayer from './EvacuationSiteLayer'
 import DefaultMarker from './DefaultMarker'
 import BoundsComponent from './BoundsCompenent'
+import MinDistLine from './MinDistLine'
 
 
 // 地図部分のコンポーネント
@@ -26,6 +27,7 @@ function Map(props) {
     <MapContainer className = {className} center = {position} zoom = {zoom} scrollWheelZoom = {false} >
       <BoundsComponent />
       <DefaultMarker position = {position} />
+      <MinDistLine />
       <TileLayer
         attribution = {attribution}
         url = {url}
